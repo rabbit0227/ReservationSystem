@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/ReservationSystem/Main.cpp
+/ReservationSystem/reservation.cpp
+/ReservationSystem/reservation.h
+/ReservationSystem.7z

@@ -61,6 +61,10 @@ namespace reservation {
         do {
             cout << "\nEnter the row (0-9)\n";
             cin >> row;
+            if (row < 0)
+            {
+                row *= -1;
+            }
             if (row > ROWS -1)
             {
                 cout << "\nPlease enter values within (0 - " << ROWS - 1 << ")";
@@ -71,6 +75,10 @@ namespace reservation {
         do {
             cout << "\nEnter the column (0-9)\n";
             cin >> col;
+            if (col < 0)
+            {
+                col *= -1;
+            }
             if (col > COLUMNS - 1)
             {
                 cout << "\nPlease enter values within (0 - " << COLUMNS - 1 << ")";
@@ -79,14 +87,6 @@ namespace reservation {
         } while (col > COLUMNS - 1);
 
         //Fail safe if user enters negative numbers
-        if (row < 0)
-        {
-            row *= -1;
-        }
-        if (col < 0)
-        {
-            col *= -1;
-        }
 
     }
 }
